@@ -16,6 +16,17 @@ class ComicsTableSeeder extends Seeder
      */
     public function run()
     {
-        //
+        $allComicsArray = config('comics');
+        foreach($allComicsArray as $singleComic) {
+            $newComic = new Comic();
+            $newComic->title = $singleComic['title'];
+            $newComic->description = $singleComic['description'];
+            $newComic->image = $singleComic['thumb'];
+            $newComic->price = $singleComic['price'];
+            $newComic->series = $singleComic['series'];
+            $newComic->sale_date = $singleComic['sale_date'];
+            $newComic->type = $singleComic['type'];
+            $newComic->save();
+        }
     }
 }
