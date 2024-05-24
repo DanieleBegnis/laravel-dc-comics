@@ -99,7 +99,16 @@ class ComicController extends Controller
     public function update(Request $request, $id)
     {
         $formData = $request->all();
-        dd($formData);
+        $comic = Comic::findOrFail($id);
+        $comic->title = $formData['title'];
+        $comic->description = $formData['description'];
+        $comic->image = $formData['image'];
+        $comic->price = $formData['price'];
+        $comic->series = $formData['series'];
+        $comic->sale_date = $formData['sale_date'];
+        $comic->type = $formData['type'];
+        $comic->save();
+        
     }
 
     /**
