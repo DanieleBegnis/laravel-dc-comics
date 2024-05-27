@@ -36,4 +36,10 @@
             <button type="submit" class="btn btn-primary">Submit</button>
         </form>
     </div>
+    <h3>ELIMINA ELEMENTO</h3>
+    <form action="{{ route('comics.destroy', ['comic' => $comic->id]) }}" method="POST">
+        @csrf
+        @method('DELETE')
+        <button class="btn btn-danger" type="submit">Elimina il Comic</button>
+    </form>
 @endsection
