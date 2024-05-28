@@ -17,7 +17,7 @@
                 <textarea class="form-control" id="description" name="description" style="height: 100px"></textarea>
                 <label for="description">Descrizione del fumetto</label>
             </div>
-            @error('title')
+            @error('description')
                 <div class="alert alert-danger">{{ $message }}</div>
             @enderror
 
@@ -25,7 +25,7 @@
                 <label for="image" class="form-label">Immagine del fumetto</label>
                 <input type="text" class="form-control" id="image" name="image" aria-describedby="emailHelp">
             </div>
-            @error('title')
+            @error('image')
                 <div class="alert alert-danger">{{ $message }}</div>
             @enderror
 
@@ -33,7 +33,7 @@
                 <label for="price" class="form-label">Prezzo del fumetto</label>
                 <input type="text" class="form-control" id="price" name="price" aria-describedby="emailHelp">
             </div>
-            @error('title')
+            @error('price')
                 <div class="alert alert-danger">{{ $message }}</div>
             @enderror
 
@@ -41,7 +41,7 @@
                 <label for="series" class="form-label">Serie del fumetto</label>
                 <input type="text" class="form-control" id="series" name="series" aria-describedby="emailHelp">
             </div>
-            @error('title')
+            @error('series')
                 <div class="alert alert-danger">{{ $message }}</div>
             @enderror
 
@@ -49,7 +49,7 @@
                 <label for="sale_date" class="form-label">Giorno di vendita del fumetto</label>
                 <input type="text" class="form-control" id="sale_date" name="sale_date" aria-describedby="emailHelp">
             </div>
-            @error('title')
+            @error('sale_date')
                 <div class="alert alert-danger">{{ $message }}</div>
             @enderror
 
@@ -57,7 +57,7 @@
                 <label for="type" class="form-label">Tipo di fumetto</label>
                 <input type="text" class="form-control" id="type" name="type" aria-describedby="emailHelp">
             </div>
-            @error('title')
+            @error('type')
                 <div class="alert alert-danger">{{ $message }}</div>
             @enderror
 
