@@ -62,6 +62,21 @@ class ComicController extends Controller
                 'series' => 'required|max:150',
                 'sale_date' => 'required',
                 'type' => 'required|max:150'
+            ],
+            [
+                'title.required' => 'Inserisci un titolo per il tuo fumetto',
+                'title.max' => 'Il titolo può essere al massimo di 250 caratteri',
+                'title.min' => 'Il titolo può essere al minimo di 10 caratteri',
+                'description.required' => 'Inserisci una descrizione per il tuo fumetto',
+                'description.max' => 'la descrizione può essere al massimo di 5000 caratteri',
+                'description.min' => 'la descrizione può essere al minimo di 10 caratteri',
+                'image.required' => 'Inserisci una immagine per il tuo fumetto',
+                'price.required' => 'Inserisci un prezzo per il tuo fumetto',
+                'series.required' => 'Inserisci una serie per il tuo fumetto',
+                'series.max' => 'la serie può essere al massimo di 5000 caratteri',
+                'sale_date.required' => 'Inserisci una sale_date per il tuo fumetto',
+                'type.required' => 'Di che tipo è il tuo fumetto?',
+                'type.max' => 'il tipo può essere al massimo di 5000 caratteri'
             ]
         );
     }
