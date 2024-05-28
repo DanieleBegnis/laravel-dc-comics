@@ -4,10 +4,14 @@
     <div class="container">
         <form action="{{ route('comics.store') }}" method="POST">
             @csrf
+
             <div class="mb-3">
                 <label for="title" class="form-label">Titolo del fumetto</label>
                 <input type="text" class="form-control" id="title" name="title" aria-describedby="emailHelp">
             </div>
+            @error('title')
+                    <div class="alert alert-danger">{{ $message }}</div>
+                @enderror 
             <div class="form-floating">
                 <textarea class="form-control" id="description" name="description" style="height: 100px"></textarea>
                 <label for="description">Descrizione del fumetto</label>
