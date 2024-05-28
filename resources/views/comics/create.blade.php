@@ -7,14 +7,14 @@
 
             <div class="mb-3">
                 <label for="title" class="form-label">Titolo del fumetto</label>
-                <input type="text" class="form-control" id="title" name="title" aria-describedby="emailHelp">
+                <input type="text" class="form-control" id="title" name="title" aria-describedby="emailHelp" value="{{ old('title') }}">
             </div>
             @error('title')
                 <div class="alert alert-danger">{{ $message }}</div>
             @enderror
 
             <div class="form-floating">
-                <textarea class="form-control" id="description" name="description" style="height: 100px"></textarea>
+                <textarea class="form-control" id="description" name="description" style="height: 100px" value="{{ old('description') }}"></textarea>
                 <label for="description">Descrizione del fumetto</label>
             </div>
             @error('description')
@@ -23,7 +23,7 @@
 
             <div class="mb-3">
                 <label for="image" class="form-label">Immagine del fumetto</label>
-                <input type="text" class="form-control" id="image" name="image" aria-describedby="emailHelp">
+                <input type="text" class="form-control" id="image" name="image" aria-describedby="emailHelp value="{{ old('image') }}"">
             </div>
             @error('image')
                 <div class="alert alert-danger">{{ $message }}</div>
@@ -31,7 +31,7 @@
 
             <div class="mb-3">
                 <label for="price" class="form-label">Prezzo del fumetto</label>
-                <input type="text" class="form-control" id="price" name="price" aria-describedby="emailHelp">
+                <input type="text" class="form-control" id="price" name="price" aria-describedby="emailHelp value="{{ old('price') }}"">
             </div>
             @error('price')
                 <div class="alert alert-danger">{{ $message }}</div>
@@ -39,7 +39,7 @@
 
             <div class="mb-3">
                 <label for="series" class="form-label">Serie del fumetto</label>
-                <input type="text" class="form-control" id="series" name="series" aria-describedby="emailHelp">
+                <input type="text" class="form-control" id="series" name="series" aria-describedby="emailHelp value="{{ old('series') }}"">
             </div>
             @error('series')
                 <div class="alert alert-danger">{{ $message }}</div>
@@ -47,7 +47,7 @@
 
             <div class="mb-3">
                 <label for="sale_date" class="form-label">Giorno di vendita del fumetto</label>
-                <input type="text" class="form-control" id="sale_date" name="sale_date" aria-describedby="emailHelp">
+                <input type="text" class="form-control" id="sale_date" name="sale_date" aria-describedby="emailHelp value="{{ old('sale_date') }}"">
             </div>
             @error('sale_date')
                 <div class="alert alert-danger">{{ $message }}</div>
@@ -55,7 +55,7 @@
 
             <div class="mb-3">
                 <label for="type" class="form-label">Tipo di fumetto</label>
-                <input type="text" class="form-control" id="type" name="type" aria-describedby="emailHelp">
+                <input type="text" class="form-control" id="type" name="type" aria-describedby="emailHelp value="{{ old('type') }}"">
             </div>
             @error('type')
                 <div class="alert alert-danger">{{ $message }}</div>
