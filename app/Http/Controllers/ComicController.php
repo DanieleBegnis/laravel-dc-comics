@@ -53,7 +53,7 @@ class ComicController extends Controller
         $newComic->type = $formdata['type'];
         $newComic->save();
 
-        $validated = $request->validate(
+        $request->validate(
             [
                 'title' => 'required|max:250|min:10',
                 'description' => 'required|max:5000|min:10',
